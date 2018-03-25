@@ -1,4 +1,4 @@
-<project name="sample" default="compile" basedir=".">
+<project name="sample" default="war" basedir=".">
    <property name='ant.version' value='ant.version'/>
    
    <target name="init" depends="clean">
@@ -20,7 +20,7 @@
 		<war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent"/>
 			<lib dir="WebContent/WEB-INF/lib"/>
-			<classes dir="build/classes"/>
+			<classes dir="classes"/>
 		</war>
 	</target>
 	
